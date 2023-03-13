@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 800;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff"), url("../fonts/Inter-ExtraBold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-SemiBold.woff") format("woff"), url("../fonts/Inter-SemiBold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"), url("../fonts/Inter-Medium.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Inter"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.eot") format("eot");
+  font-display: swap;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1500px;
+  height: 100%;
+  padding: 30px 0;
+}
+
+.main {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(65, 74, 75)));
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(65, 74, 75));
+  height: 100vh;
+  padding: 30px 0;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.head h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.imgbox {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.imgbox img {
+  width: 100%;
+}
+
+.slider {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+}
+
+.slidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.slidebar h3 {
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  top: -16px;
+}
+
+.slidebar__item {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+.slidebar__item:first-child {
+  background: -webkit-gradient(linear, right top, left top, from(rgb(68, 94, 237)), to(rgb(0, 60, 245)));
+  background: linear-gradient(270deg, rgb(68, 94, 237), rgb(0, 60, 245));
+}
+.slidebar__item:nth-child(2) {
+  background: linear-gradient(221.87deg, #8308ea 1%, #5305af 128%);
+}
+.slidebar__item:nth-child(3) {
+  background: -webkit-gradient(linear, right top, left top, from(rgb(116, 241, 88)), to(rgb(33, 245, 0)));
+  background: linear-gradient(270deg, rgb(116, 241, 88), rgb(33, 245, 0));
+}
+.slidebar__item:nth-child(4) {
+  background: -webkit-gradient(linear, right top, left top, from(rgb(245, 61, 61)), to(rgb(255, 0, 0)));
+  background: linear-gradient(270deg, rgb(245, 61, 61), rgb(255, 0, 0));
+}
+.slidebar__item:nth-child(5) {
+  background: linear-gradient(220.16deg, #ffe101 -8%, #f39102 138%);
+}
+
+.main__slide {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.slide:first-child {
+  background-image: url("../IMG/Yellow.avif");
+}
+.slide:nth-child(2) {
+  background-image: url("../IMG/Red.avif");
+}
+.slide:nth-child(3) {
+  background-image: url("../IMG/Green.avif");
+}
+.slide:nth-child(4) {
+  background-image: url("../IMG/purple.avif");
+}
+.slide:nth-child(5) {
+  background-image: url("../IMG/blue.avif");
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background-color: #757C7C;
+}
+
+.up-btn {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 8px 5px 7px 5px;
+}
+
+.down-btn {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 10px 5px 5px 5px;
+}
+
+@media (max-width: 1500px) {
+  .slider {
+    border-radius: 0px;
+  }
+}
+@media (max-width: 610px) {
+  .slidebar h3 {
+    font-size: 30px;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
